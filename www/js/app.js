@@ -83,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/lov',
         views: {
           'tab-plugin': {
-            templateUrl: 'templates/plugin-lov.html',
+            templateUrl: 'templates/plugins/plugin-lov.html',
             controller: 'PluginLovCtrl'
           }
         }
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/sign',
         views: {
           'tab-plugin': {
-            templateUrl: 'templates/plugin-sign.html',
+            templateUrl: 'templates/plugins/plugin-sign.html',
             controller: 'PluginSignCtrl'
           }
         }
@@ -101,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/photoView',
         views: {
           'tab-plugin': {
-            templateUrl: 'templates/plugin-photoView.html',
+            templateUrl: 'templates/plugins/plugin-photoView.html',
             controller: 'PluginPhotoViewCtrl'
           }
         }
@@ -114,6 +114,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             controller: 'AccountCtrl'
           }
         }
+      })
+      .state('defer', {
+        url: '/defer',
+        templateUrl: 'templates/angular_defer/angular_defer.html',
+        controller: 'DeferCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback
